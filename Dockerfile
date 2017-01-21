@@ -12,7 +12,8 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 			org.label-schema.vendor="Jorge Andrada Prieto" \
 			org.label-schema.version=$VERSION \
 			org.label-schema.schema-version="1.0" \
-			maintainer="Jorge Andrada Prieto <jandradap@gmail.com>"
+			maintainer="Jorge Andrada Prieto <jandradap@gmail.com>" \
+			org.label-schema.docker.cmd="docker run --rm -it -v $(pwd):/usr/src jorgeandrada/doctoc --gitlab"
 
 RUN npm install -g doctoc && \
 	mkdir /usr/src
