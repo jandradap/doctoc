@@ -29,7 +29,7 @@ docker run --rm -it -v $(pwd):/usr/src jorgeandrada/doctoc
 
 This will update all markdown files in the current directory and all its
 subdirectories with a table of content that will point at the anchors generated
-by the markdown parser. Doctoc defaults to using the **Gitlab** parser, but you can use doctoc to generate links compatible with other sites
+by the markdown parser. Doctoc defaults to using the **github** parser, but you can use doctoc to generate links compatible with other sites
 
 In order to add a table of contents whose links are compatible other sites add the appropriate mode flag:
 
