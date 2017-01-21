@@ -11,16 +11,12 @@ docker run --rm -it -v $(pwd):/usr/src jorgeandrada/doctoc --gitlab
 -   [https://www.npmjs.com/package/doctoc](https://www.npmjs.com/package/doctoc)
 -   [https://github.com/thlorenz/doctoc](https://github.com/thlorenz/doctoc)
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 **Table of Contents:**
 -   [Adding toc to all files in a directory and sub directories](#adding-toc-to-all-files-in-a-directory-and-sub-directories)
     -   [Update existing doctoc TOCs effortlessly](#update-existing-doctoc-tocs-effortlessly)
     -   [Adding toc to individual files](#adding-toc-to-individual-files)
     -   [Printing to stdout](#printing-to-stdout)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
 ### Adding toc to all files in a directory and sub directories
