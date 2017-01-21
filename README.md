@@ -1,4 +1,5 @@
 # Docker DocToc
+[![](https://images.microbadger.com/badges/image/jorgeandrada/doctoc.svg)](https://microbadger.com/images/jorgeandrada/doctoc "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/jorgeandrada/doctoc.svg)](https://microbadger.com/images/jorgeandrada/doctoc "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/commit/jorgeandrada/doctoc.svg)](https://microbadger.com/images/jorgeandrada/doctoc "Get your own commit badge on microbadger.com")
 
 Generates table of contents for markdown files inside local git repository. Links are compatible with anchors generated
 by github or other sites via a command line flag.
