@@ -20,4 +20,4 @@ RUN npm install -g doctoc && \
 
 WORKDIR /usr/src
 
-ENTRYPOINT ["doctoc", "--notitle"]
+ENTRYPOINT ["doctoc", ".", "--notitle"]
