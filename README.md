@@ -3,9 +3,12 @@
 
 Generates table of contents for markdown files inside local git repository. Links are compatible with anchors generated
 by github or other sites via a command line flag.
-```
+
+```bash
 docker run --rm -it -v $(pwd):/usr/src jorgeandrada/doctoc --gitlab
 ```
+
+<a href='https://ko-fi.com/A417UXC' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 **Original repository of DocToc**:
 -   [https://www.npmjs.com/package/doctoc](https://www.npmjs.com/package/doctoc)
@@ -13,17 +16,18 @@ docker run --rm -it -v $(pwd):/usr/src jorgeandrada/doctoc --gitlab
 
 
 **Table of Contents:**
--   [Adding toc to all files in a directory and sub directories](#adding-toc-to-all-files-in-a-directory-and-sub-directories)
-    -   [Update existing doctoc TOCs effortlessly](#update-existing-doctoc-tocs-effortlessly)
-    -   [Adding toc to individual files](#adding-toc-to-individual-files)
-    -   [Printing to stdout](#printing-to-stdout)
+- [Docker DocToc](#docker-doctoc)
+    - [Adding toc to all files in a directory and sub directories](#adding-toc-to-all-files-in-a-directory-and-sub-directories)
+    - [Update existing doctoc TOCs effortlessly](#update-existing-doctoc-tocs-effortlessly)
+    - [Adding toc to individual files](#adding-toc-to-individual-files)
+    - [Printing to stdout](#printing-to-stdout)
 
 
 ### Adding toc to all files in a directory and sub directories
 
 Go into the directory that contains you local git project and type:
 
-```shell
+```bash
 docker run --rm -it -v $(pwd):/usr/src jorgeandrada/doctoc
 ```
 
@@ -35,7 +39,7 @@ In order to add a table of contents whose links are compatible other sites add t
 
 Available modes are:
 
-```shell
+```bash
 docker run --rm -it -v $(pwd):/usr/src jorgeandrada/doctoc --bitbucket   bitbucket.org
 docker run --rm -it -v $(pwd):/usr/src jorgeandrada/doctoc --nodejs      nodejs.org
 docker run --rm -it -v $(pwd):/usr/src jorgeandrada/doctoc --github      github.com
@@ -75,7 +79,6 @@ Found README.md in "."
     - [Adding toc to all files in a directory and sub directories](#adding-toc-to-all-files-in-a-directory-and-sub-directories)
     - [Update existing doctoc TOCs effortlessly](#update-existing-doctoc-tocs-effortlessly)
     - [Adding toc to individual files](#adding-toc-to-individual-files)
-      - [Examples](#examples)
     - [Printing to stdout](#printing-to-stdout)
 
 ==================
