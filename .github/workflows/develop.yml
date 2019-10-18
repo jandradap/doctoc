@@ -17,8 +17,8 @@ jobs:
     #   run: docker push docker.pkg.github.com/${{ github.repository }}/doctoc:develop
     - name:  Push Docker image to Github package registry
       run: |
-        docker login docker.pkg.github.com --username ${{github.actor}} --password "${GITHUB_PACKAGE_REGISTRY_TOKEN}"
+        echo ${{ secrets.GITHUB_REGISTRY_TOKEN }} | docker login docker.pkg.github.com --username ${{github.actor}} --password-stdin
         docker push docker.pkg.github.com/${{ github.repository }}/doctoc:develop
-      env:
-        GITHUB_PACKAGE_REGISTRY_TOKEN: ${{ secrets.GITHUB_PACKAGE_REGISTRY_TOKEN }}
+    - name: Logout
+      run: docker logout
 ...
