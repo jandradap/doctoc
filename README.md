@@ -55,11 +55,11 @@ If you already have a TOC inserted by doctoc, it will automatically be updated b
 
 If you want to convert only specific files, do:
 ```shell
-docker run --rm -it -v /path/to/file:/usr/src jorgeandrada/doctoc
+docker run --entrypoint doctoc --rm -it -v /path/to/dir:/usr/src jorgeandrada/doctoc file.md --notitle
 ```
 
 ```
-docker run --rm -it -v /home/monino/Git/doctoc/README.md:/usr/src jorgeandrada/doctoc
+docker run --entrypoint doctoc --rm -it -v /home/monino/Git/doctoc/:/usr/src jorgeandrada/doctoc README.md --notitle
 ```
 
 ### Printing to stdout
